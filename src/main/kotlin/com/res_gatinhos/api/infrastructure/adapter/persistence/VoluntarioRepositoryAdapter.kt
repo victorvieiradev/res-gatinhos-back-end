@@ -5,7 +5,7 @@ import com.res_gatinhos.api.domain.ports.output.VoluntarioRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-class VoluntarioRepositoryImpl (
+class VoluntarioRepositoryAdapter (
     private val jpaVoluntarioRepository: JpaVoluntarioRepository
 ): VoluntarioRepository {
     override fun salvar(voluntario: Voluntario): Voluntario {

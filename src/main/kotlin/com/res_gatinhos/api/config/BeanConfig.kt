@@ -9,13 +9,4 @@ import org.springframework.context.annotation.Configuration
 @Configuration
 class BeanConfig {
 
-    @Bean
-    fun voluntarioRepository(jpaRepository: JpaVoluntarioRepository): VoluntarioRepository {
-        return VoluntarioRepositoryAdapter(jpaRepository)
     }
-
-    @Bean
-    fun notificacaoPort(): WhatsappAdapter {
-        return WhatsappAdapter()
-    }
-}

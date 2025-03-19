@@ -11,4 +11,9 @@ class VoluntarioRepositoryAdapter (
     override fun salvar(voluntario: Voluntario): Voluntario {
         return jpaVoluntarioRepository.save(voluntario)
     }
+
+    override fun listar(): List<Voluntario> {
+        return jpaVoluntarioRepository.findAll()
+    }
+
 }

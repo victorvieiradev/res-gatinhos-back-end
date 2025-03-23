@@ -12,7 +12,7 @@ import jakarta.persistence.Table
 data class Voluntario(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0,
+    val id: Long,
     val nome: String,
     val email: String,
     val telefone: String

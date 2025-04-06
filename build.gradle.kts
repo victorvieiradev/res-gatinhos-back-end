@@ -16,6 +16,7 @@ java {
 }
 
 repositories {
+	maven { url = uri("https://jitpack.io") }
 	mavenCentral()
 }
 
@@ -26,6 +27,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.1.0")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")

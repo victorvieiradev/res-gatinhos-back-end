@@ -25,7 +25,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-	implementation("org.flywaydb:flyway-core")
+	//implementation("org.flywaydb:flyway-core")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.1.0")
 	runtimeOnly("com.h2database:h2")
